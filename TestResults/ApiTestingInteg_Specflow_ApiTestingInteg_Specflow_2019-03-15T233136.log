@@ -1,0 +1,113 @@
+﻿2019-03-15T23:31:36.6871950-03:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2019-03-15T23:31:36.6911742-03:00;VSTestExecutionThread;Info;SpecFlow+Runner 1.8.5 execution started
+2019-03-15T23:31:36.6911742-03:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\ApiTestingInteg_Specflow\bin\Debug\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2019-03-15T23:31:36.8557273-03:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2019-03-15T23:31:36.8557273-03:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\ApiTestingInteg_Specflow\bin\Debug\ApiTestingInteg_Specflow.dll
+2019-03-15T23:31:36.8557273-03:00;VSTestExecutionThread;Info;Profile: ApiTestingInteg_Specflow
+2019-03-15T23:31:46.9369917-03:00;Thread#15;Info;starting test run
+2019-03-15T23:31:46.9459677-03:00;Thread#15;Info;Discovering target: Default
+2019-03-15T23:31:46.9459677-03:00;Thread#15;Info;Discovering tests from assembly: C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\ApiTestingInteg_Specflow\bin\Debug\ApiTestingInteg_Specflow.dll
+Appdomain Disposed
+Test Suite Dump
+#0: ApiTestingInteg_Specflow/ApiTestingInteg_Specflow - 
+#1: Default - 
+#2: ApiTestingInteg_Specflow - 
+#3: MyTestsScenarios - 
+#4: T23431 - Validate API response using given endpoint - TestAssembly:ApiTestingInteg_Specflow/Feature:MyTestsScenarios/Scenario:T23431+-+Validate+API+response+using+given+endpoint
+#5: T23432 - Get user information using userid, User Info, 2 - TestAssembly:ApiTestingInteg_Specflow/Feature:MyTestsScenarios/Scenario:T23432+-+Get+user+information+using+userid%2c+User+Info%2c+2
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for ApiTestingInteg_Specflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given I have an endpoint /posts/1
+Thread#0:T:done: MyTestsScenarios.GivenIHaveAnEndpointEndpoint("/posts/1") (0.0s)
+Thread#0:B:When I call the Get method of API
+Thread#0:T:done: MyTestsScenarios.WhenICallTheGetMethodOfAPI() (0.0s)
+Thread#0:B:Then I get API response as statuscode as 200OK
+Thread#0:T:done: MyTestsScenarios.ThenIGetAPIResponseAsStatuscodeAsOK() (1.3s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #5 from normal test queue 
+Thread#0:Scheduler: considering testitem #5 for thread 0
+Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #5 for thread 0
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #4/0 is finished on thread #0 as Succeeded within 1.7593034 seconds
+Thread#0: Test #5/0 is started on thread #0
+Thread#0:B:Given I have an endpoint /posts/
+Thread#0:T:done: MyTestsScenarios.GivenIHaveAnEndpointEndpoint("/posts/") (0.0s)
+Thread#0:B:When I call the method GET to fetch user information using the ID 2
+Thread#0:T:done: MyTestsScenarios.WhenICallTheMethodGETToFetchUserInformationUsingTheID("2") (0.0s)
+Thread#0:B:Then I will get user information
+Thread#0:T:error: Could not find a part of the path 'C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\Json\customer-data-response.json'.
+Thread#0:TestItem#5:Scheduler: reschedule tests for testitem #5
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #5
+Thread#0:Scheduler: considering testitem #5 for thread 0
+Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #5 for thread 0
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 1
+Thread#0: Test #5/0 is finished on thread #0 as Failed within 0.1785648 seconds
+Thread#0: Test #5/1 is started on thread #0
+Thread#0:B:Given I have an endpoint /posts/
+Thread#0:T:done: MyTestsScenarios.GivenIHaveAnEndpointEndpoint("/posts/") (0.0s)
+Thread#0:B:When I call the method GET to fetch user information using the ID 2
+Thread#0:T:done: MyTestsScenarios.WhenICallTheMethodGETToFetchUserInformationUsingTheID("2") (0.0s)
+Thread#0:B:Then I will get user information
+Thread#0:T:error: Could not find a part of the path 'C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\Json\customer-data-response.json'.
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #5
+Thread#0:Scheduler: considering testitem #5 for thread 0
+Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #5 for thread 0
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 2
+Thread#0: Test #5/1 is finished on thread #0 as Failed within 0.0119243 seconds
+Thread#0: Test #5/2 is started on thread #0
+Thread#0:B:Given I have an endpoint /posts/
+Thread#0:T:done: MyTestsScenarios.GivenIHaveAnEndpointEndpoint("/posts/") (0.0s)
+Thread#0:B:When I call the method GET to fetch user information using the ID 2
+Thread#0:T:done: MyTestsScenarios.WhenICallTheMethodGETToFetchUserInformationUsingTheID("2") (0.0s)
+Thread#0:B:Then I will get user information
+Thread#0:T:error: Could not find a part of the path 'C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\Json\customer-data-response.json'.
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #5/2 is finished on thread #0 as Failed within 0.013998 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+2019-03-15T23:31:49.0862692-03:00;Thread#15;Info;test run finished
+2019-03-15T23:31:49.0872501-03:00;Thread#15;Info;publishing test results
+2019-03-15T23:31:49.1481296-03:00;Thread#15;Info;test results published
+2019-03-15T23:31:49.1481296-03:00;Thread#15;Info;generating reports
+2019-03-15T23:31:49.1533718-03:00;Thread#15;Info;creating 1 report(s)
+2019-03-15T23:31:49.1533718-03:00;Thread#15;Info;generate Report ReportTemplate.cshtml
+2019-03-15T23:31:50.1181907-03:00;Thread#15;Info;reports generated
+Total: 2 (test executions: 4)
+Succeeded: 1
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1
+2019-03-15T23:31:50.1212093-03:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+2019-03-15T23:31:50.1215196-03:00;VSTestExecutionThread;Info;adding Test Execution Report 'C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\TestResults\ApiTestingInteg_Specflow_ApiTestingInteg_Specflow_2019-03-15T233136.html'
+2019-03-15T23:31:50.1351623-03:00;VSTestExecutionThread;Info;Log file: file:///C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\TestResults\ApiTestingInteg_Specflow_ApiTestingInteg_Specflow_2019-03-15T233136.log

@@ -1,0 +1,59 @@
+﻿2019-03-15T22:39:07.6388212-03:00;VSTestExecutionThread;Info;SpecFlow+Runner 1.8.5 execution started
+2019-03-15T22:39:07.6458665-03:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\ApiTestingInteg_Specflow\bin\Debug\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2019-03-15T22:39:07.9208696-03:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2019-03-15T22:39:07.9208696-03:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\ApiTestingInteg_Specflow\bin\Debug\ApiTestingInteg_Specflow.dll
+2019-03-15T22:39:07.9210659-03:00;VSTestExecutionThread;Info;Profile: ApiTestingInteg_Specflow
+2019-03-15T22:39:16.0527391-03:00;Thread#14;Info;starting test run
+2019-03-15T22:39:16.0687042-03:00;Thread#14;Info;Discovering target: Default
+2019-03-15T22:39:16.0697034-03:00;Thread#14;Info;Discovering tests from assembly: C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\ApiTestingInteg_Specflow\bin\Debug\ApiTestingInteg_Specflow.dll
+Appdomain Disposed
+Test Suite Dump
+#0: ApiTestingInteg_Specflow/ApiTestingInteg_Specflow - 
+#1: Default - 
+#2: ApiTestingInteg_Specflow - 
+#3: MyTestsScenarios - 
+#5: T23432 - Get user information using userid, User Info, 2 - TestAssembly:ApiTestingInteg_Specflow/Feature:MyTestsScenarios/Scenario:T23432+-+Get+user+information+using+userid%2c+User+Info%2c+2
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #5 from normal test queue 
+Thread#0:Scheduler: considering testitem #5 for thread 0
+Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #5 for thread 0
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for ApiTestingInteg_Specflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#0: Test #5/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given I have an endpoint /posts/
+Thread#0:T:done: MyTestsScenarios.GivenIHaveAnEndpointEndpoint("/posts/") (27.0s)
+Thread#0:B:When I call the method GET to fetch user information using the ID 2
+Thread#0:T:done: MyTestsScenarios.WhenICallTheMethodGETToFetchUserInformationUsingTheID("2") (13.0s)
+Thread#0:B:Then I will get user information
+Thread#0:T:done: MyTestsScenarios.ThenIWillGetUserInformation() (38.3s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #5/0 is finished on thread #0 as Succeeded within 96.5169719 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+2019-03-15T22:40:53.4316523-03:00;Thread#14;Info;test run finished
+2019-03-15T22:40:53.4316523-03:00;Thread#14;Info;publishing test results
+2019-03-15T22:40:53.5163864-03:00;Thread#14;Info;test results published
+2019-03-15T22:40:53.5173837-03:00;Thread#14;Info;generating reports
+2019-03-15T22:40:53.5213730-03:00;Thread#14;Info;creating 1 report(s)
+2019-03-15T22:40:53.5213730-03:00;Thread#14;Info;generate Report ReportTemplate.cshtml
+2019-03-15T22:40:54.4349096-03:00;Thread#14;Info;reports generated
+Total: 1
+Succeeded: 1
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0
+2019-03-15T22:40:54.4389503-03:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+2019-03-15T22:40:54.4389503-03:00;VSTestExecutionThread;Info;adding Test Execution Report 'C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\TestResults\ApiTestingInteg_Specflow_ApiTestingInteg_Specflow_2019-03-15T223907.html'
+2019-03-15T22:40:54.4468785-03:00;VSTestExecutionThread;Info;Log file: file:///C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\TestResults\ApiTestingInteg_Specflow_ApiTestingInteg_Specflow_2019-03-15T223907.log

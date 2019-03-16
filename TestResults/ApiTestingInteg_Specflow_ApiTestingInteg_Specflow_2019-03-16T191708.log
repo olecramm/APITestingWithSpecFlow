@@ -1,0 +1,178 @@
+﻿2019-03-16T19:17:08.7801805-03:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2019-03-16T19:17:08.7851682-03:00;VSTestExecutionThread;Info;SpecFlow+Runner 1.8.5 execution started
+2019-03-16T19:17:08.7851682-03:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\bin\Debug\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2019-03-16T19:17:08.9645954-03:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2019-03-16T19:17:08.9645954-03:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\bin\Debug\ApiTestingInteg_Specflow.dll
+2019-03-16T19:17:08.9645954-03:00;VSTestExecutionThread;Info;Profile: ApiTestingInteg_Specflow
+2019-03-16T19:17:14.0362656-03:00;Thread#15;Info;starting test run
+2019-03-16T19:17:14.0482656-03:00;Thread#15;Info;Discovering target: Default
+2019-03-16T19:17:14.0482656-03:00;Thread#15;Info;Discovering tests from assembly: C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\bin\Debug\ApiTestingInteg_Specflow.dll
+Appdomain Disposed
+Test Suite Dump
+#0: ApiTestingInteg_Specflow/ApiTestingInteg_Specflow - 
+#1: Default - 
+#2: ApiTestingInteg_Specflow - 
+#3: MyTestsScenarios - 
+#4: T23431 - Validate API response using given endpoint - GET - TestAssembly:ApiTestingInteg_Specflow/Feature:MyTestsScenarios/Scenario:T23431+-+Validate+API+response+using+given+endpoint+-+GET
+#5: T23432 - Get user information using userid - GET, User Info, 2 - TestAssembly:ApiTestingInteg_Specflow/Feature:MyTestsScenarios/Scenario:T23432+-+Get+user+information+using+userid+-+GET%2c+User+Info%2c+2
+#6: T23433 - Get user account information using userid and accountnumber - GET, User info, 101 - TestAssembly:ApiTestingInteg_Specflow/Feature:MyTestsScenarios/Scenario:T23433+-+Get+user+account+information+using+userid+and+accountnumber+-+GET%2c+User+info%2c+101
+#7: T23434 - Post book information - TestAssembly:ApiTestingInteg_Specflow/Feature:MyTestsScenarios/Scenario:T23434+-+Post+book+information
+#8: T23435 - Validate json schema response for book registered, 3 - TestAssembly:ApiTestingInteg_Specflow/Feature:MyTestsScenarios/Scenario:T23435+-+Validate+json+schema+response+for+book+registered%2c+3
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for ApiTestingInteg_Specflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given I have an endpoint /posts/1
+Thread#0:T:done: MyTestsScenarios.GivenIHaveAnEndpointEndpoint("/posts/1") (0.0s)
+Thread#0:B:When I call the Get method of API
+Thread#0:T:done: MyTestsScenarios.WhenICallTheGetMethodOfAPI() (0.0s)
+Thread#0:B:Then I get API response as statuscode as 200OK
+Thread#0:T:done: MyTestsScenarios.ThenIGetAPIResponseAsStatuscodeAsOK() (1.4s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #5 from normal test queue 
+Thread#0:Scheduler: considering testitem #5 for thread 0
+Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #5 for thread 0
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #4/0 is finished on thread #0 as Succeeded within 1.8876428 seconds
+Thread#0: Test #5/0 is started on thread #0
+Thread#0:B:Given I have an endpoint /posts/
+Thread#0:T:done: MyTestsScenarios.GivenIHaveAnEndpointEndpoint("/posts/") (0.0s)
+Thread#0:B:When I call the method GET to fetch user information using the ID 2
+Thread#0:T:done: MyTestsScenarios.WhenICallTheMethodGETToFetchUserInformationUsingTheID("2") (0.0s)
+Thread#0:B:Then I will get user information
+Thread#0:T:done: MyTestsScenarios.ThenIWillGetUserInformation() (0.1s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #6 from normal test queue 
+Thread#0:Scheduler: considering testitem #6 for thread 0
+Thread#0:TestItem#6:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#6:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#6:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #6 for thread 0
+Thread#0:Scheduler: Test #6 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #5/0 is finished on thread #0 as Succeeded within 0.1615562 seconds
+Thread#0: Test #6/0 is started on thread #0
+Thread#0:B:Given I have an endpoint /userinformation/
+Thread#0:T:done: MyTestsScenarios.GivenIHaveAnEndpointEndpoint("/userinformation/") (0.0s)
+Thread#0:B:When I call the method GET to fetch user information using the 101 and 4534
+Thread#0:T:done: MyTestsScenarios.WhenICallTheMethodGETToFetchUserInformationUsingTheAnd(101, 4534) (0.0s)
+Thread#0:B:Then I will get the user information
+Thread#0:T:done: MyTestsScenarios.ThenIWillGetTheUserInformation() (0.0s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #7 from normal test queue 
+Thread#0:Scheduler: considering testitem #7 for thread 0
+Thread#0:TestItem#7:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#7:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#7:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #7 for thread 0
+Thread#0:Scheduler: Test #7 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #6/0 is finished on thread #0 as Succeeded within 0.0230855 seconds
+Thread#0: Test #7/0 is started on thread #0
+Thread#0:B:Given I have an endpoint /posts/
+Thread#0:T:done: MyTestsScenarios.GivenIHaveAnEndpointEndpoint("/posts/") (0.0s)
+Thread#0:B:When I call a POST method to register a book
+Thread#0:T:done: MyTestsScenarios.WhenICallAPOSTMethodToRegisterABook() (0.0s)
+Thread#0:B:Then I will register the book successfuly
+Thread#0:T:error:   Expected: Created
+Thread#0:T:  But was:  InternalServerError
+Thread#0:TestItem#7:Scheduler: reschedule tests for testitem #7
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #7
+Thread#0:Scheduler: considering testitem #7 for thread 0
+Thread#0:TestItem#7:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#7:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#7:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #7 for thread 0
+Thread#0:Scheduler: Test #7 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 1
+Thread#0: Test #7/0 is finished on thread #0 as Failed within 0.2721369 seconds
+Thread#0: Test #7/1 is started on thread #0
+Thread#0:B:Given I have an endpoint /posts/
+Thread#0:T:done: MyTestsScenarios.GivenIHaveAnEndpointEndpoint("/posts/") (0.0s)
+Thread#0:B:When I call a POST method to register a book
+Thread#0:T:done: MyTestsScenarios.WhenICallAPOSTMethodToRegisterABook() (0.0s)
+Thread#0:B:Then I will register the book successfuly
+Thread#0:T:error: Multiple failures or warnings in test:
+Thread#0:T:  1)   Expected: Created
+Thread#0:T:  But was:  InternalServerError
+Thread#0:T:  2)   Expected: Created
+Thread#0:T:  But was:  InternalServerError
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: dequeuing a rescheduled testitem: #7
+Thread#0:Scheduler: considering testitem #7 for thread 0
+Thread#0:TestItem#7:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#7:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#7:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #7 for thread 0
+Thread#0:Scheduler: Test #7 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 2
+Thread#0: Test #7/1 is finished on thread #0 as Failed within 0.0224732 seconds
+Thread#0: Test #7/2 is started on thread #0
+Thread#0:B:Given I have an endpoint /posts/
+Thread#0:T:done: MyTestsScenarios.GivenIHaveAnEndpointEndpoint("/posts/") (0.0s)
+Thread#0:B:When I call a POST method to register a book
+Thread#0:T:done: MyTestsScenarios.WhenICallAPOSTMethodToRegisterABook() (0.0s)
+Thread#0:B:Then I will register the book successfuly
+Thread#0:T:error: Multiple failures or warnings in test:
+Thread#0:T:  1)   Expected: Created
+Thread#0:T:  But was:  InternalServerError
+Thread#0:T:  2)   Expected: Created
+Thread#0:T:  But was:  InternalServerError
+Thread#0:T:  3)   Expected: Created
+Thread#0:T:  But was:  InternalServerError
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #8 from normal test queue 
+Thread#0:Scheduler: considering testitem #8 for thread 0
+Thread#0:TestItem#8:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#8:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#8:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #8 for thread 0
+Thread#0:Scheduler: Test #8 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #7/2 is finished on thread #0 as Failed within 0.0412188 seconds
+Thread#0: Test #8/0 is started on thread #0
+Thread#0:B:Given I have an endpoint /posts/
+Thread#0:T:done: MyTestsScenarios.GivenIHaveAnEndpointEndpoint("/posts/") (0.0s)
+Thread#0:B:When I call a GET method to retrieve a book information with its 3
+Thread#0:T:done: MyTestsScenarios.WhenICallAGETMethodToRetrieveABookInformationWithIts("3") (0.0s)
+Thread#0:B:Then I will get the book information for validation
+Thread#0:T:done: MyTestsScenarios.ThenIWillGetTheBookInformationForValidation() (0.1s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #8/0 is finished on thread #0 as Succeeded within 0.11651 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+2019-03-16T19:17:16.7666140-03:00;Thread#15;Info;test run finished
+2019-03-16T19:17:16.7676094-03:00;Thread#15;Info;publishing test results
+2019-03-16T19:17:16.8370420-03:00;Thread#15;Info;test results published
+2019-03-16T19:17:16.8370420-03:00;Thread#15;Info;generating reports
+2019-03-16T19:17:16.8420340-03:00;Thread#15;Info;creating 1 report(s)
+2019-03-16T19:17:16.8420340-03:00;Thread#15;Info;generate Report ReportTemplate.cshtml
+2019-03-16T19:17:17.8406551-03:00;Thread#15;Info;reports generated
+Total: 5 (test executions: 7)
+Succeeded: 4
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1
+2019-03-16T19:17:17.8436462-03:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+2019-03-16T19:17:17.8436462-03:00;VSTestExecutionThread;Info;adding Test Execution Report 'C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\TestResults\ApiTestingInteg_Specflow_ApiTestingInteg_Specflow_2019-03-16T191708.html'
+2019-03-16T19:17:17.8546571-03:00;VSTestExecutionThread;Info;Log file: file:///C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\TestResults\ApiTestingInteg_Specflow_ApiTestingInteg_Specflow_2019-03-16T191708.log

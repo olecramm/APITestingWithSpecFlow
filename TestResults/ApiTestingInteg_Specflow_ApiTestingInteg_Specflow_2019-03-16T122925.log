@@ -1,0 +1,95 @@
+﻿2019-03-16T12:29:24.7394854-03:00;VSTestExecutionThread;Info;SpecFlow+Runner 1.8.5 execution started
+2019-03-16T12:29:24.7444726-03:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\ApiTestingInteg_Specflow\bin\Debug\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2019-03-16T12:29:25.0067706-03:00;VSTestExecutionThread;Info;SpecRun Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2019-03-16T12:29:25.0067706-03:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\ApiTestingInteg_Specflow\bin\Debug\ApiTestingInteg_Specflow.dll
+2019-03-16T12:29:25.0067706-03:00;VSTestExecutionThread;Info;Profile: ApiTestingInteg_Specflow
+2019-03-16T12:29:34.1408268-03:00;Thread#13;Info;starting test run
+2019-03-16T12:29:34.1534164-03:00;Thread#13;Info;Discovering target: Default
+2019-03-16T12:29:34.1534164-03:00;Thread#13;Info;Discovering tests from assembly: C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\ApiTestingInteg_Specflow\bin\Debug\ApiTestingInteg_Specflow.dll
+Appdomain Disposed
+Test Suite Dump
+#0: ApiTestingInteg_Specflow/ApiTestingInteg_Specflow - 
+#1: Default - 
+#2: ApiTestingInteg_Specflow - 
+#3: MyTestsScenarios - 
+#4: T23431 - Validate API response using given endpoint - TestAssembly:ApiTestingInteg_Specflow/Feature:MyTestsScenarios/Scenario:T23431+-+Validate+API+response+using+given+endpoint
+#5: T23432 - Get user information using userid, User Info, 2 - TestAssembly:ApiTestingInteg_Specflow/Feature:MyTestsScenarios/Scenario:T23432+-+Get+user+information+using+userid%2c+User+Info%2c+2
+#6: Get user account information using userid and accountnumber, User info, 101 - TestAssembly:ApiTestingInteg_Specflow/Feature:MyTestsScenarios/Scenario:Get+user+account+information+using+userid+and+accountnumber%2c+User+info%2c+101
+End: Test Suite Dump
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #4 from normal test queue 
+Thread#0:Scheduler: considering testitem #4 for thread 0
+Thread#0:TestItem#4:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#4:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#4:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #4 for thread 0
+Thread#0:Scheduler: Test #4 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread #0: creating new test thread executor for ApiTestingInteg_Specflow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Thread#0: Test #4/0 is started on thread #0
+Thread#0:T:-> Using app.config
+Thread#0:B:Given I have an endpoint /posts/1
+Thread#0:T:done: MyTestsScenarios.GivenIHaveAnEndpointEndpoint("/posts/1") (0.0s)
+Thread#0:B:When I call the Get method of API
+Thread#0:T:done: MyTestsScenarios.WhenICallTheGetMethodOfAPI() (0.0s)
+Thread#0:B:Then I get API response as statuscode as 200OK
+Thread#0:T:done: MyTestsScenarios.ThenIGetAPIResponseAsStatuscodeAsOK() (1.4s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #5 from normal test queue 
+Thread#0:Scheduler: considering testitem #5 for thread 0
+Thread#0:TestItem#5:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#5:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#5:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #5 for thread 0
+Thread#0:Scheduler: Test #5 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #4/0 is finished on thread #0 as Succeeded within 1.7222484 seconds
+Thread#0: Test #5/0 is started on thread #0
+Thread#0:B:Given I have an endpoint /posts/
+Thread#0:T:done: MyTestsScenarios.GivenIHaveAnEndpointEndpoint("/posts/") (0.0s)
+Thread#0:B:When I call the method GET to fetch user information using the ID 2
+Thread#0:T:done: MyTestsScenarios.WhenICallTheMethodGETToFetchUserInformationUsingTheID("2") (0.0s)
+Thread#0:B:Then I will get user information
+Thread#0:T:done: MyTestsScenarios.ThenIWillGetUserInformation() (0.1s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: testitem #6 from normal test queue 
+Thread#0:Scheduler: considering testitem #6 for thread 0
+Thread#0:TestItem#6:testItemMatchesCurrentTestThread:UnSpecific
+Thread#0:TestItem#6:runsOnOneOtherThreadSpecific:False
+Thread#0:TestItem#6:runsOnOneOtherThreadUnspecific:False
+Thread#0:Scheduler: using testitem #6 for thread 0
+Thread#0:Scheduler: Test #6 is scheduled for thread
+Thread#0:Scheduler: with testItemExecutionIndex 0
+Thread#0: Test #5/0 is finished on thread #0 as Succeeded within 0.1616038 seconds
+Thread#0: Test #6/0 is started on thread #0
+Thread#0:B:Given I have a endpoint /userinformation/
+Thread#0:T:done: MyTestsScenarios.GivenIHaveAEndpointUserinformation("/userinformation/") (12.9s)
+Thread#0:B:When I call the method GET to fetch user information using the 101 and 4534
+Thread#0:T:done: MyTestsScenarios.WhenICallTheMethodGETToFetchUserInformationUsingTheAnd(101, 4534) (43.2s)
+Thread#0:B:Then I will get the user information
+Thread#0:T:done: MyTestsScenarios.ThenIWillGetTheUserInformation() (19.8s)
+Thread#0:Scheduler: get next test for thread 0
+Thread#:Scheduler: at the end of normal test queue
+Thread#0:Scheduler: enumerator for thread is at end
+Thread#0:Scheduler: No more tests for thread
+Thread#0: Test #6/0 is finished on thread #0 as Succeeded within 83.1080422 seconds
+Appdomain Disposed
+Thread#-1:Scheduler: get next test for thread -1
+Thread#:Scheduler: at the end of normal test queue
+Thread#-1:Scheduler: enumerator for thread is at end
+2019-03-16T12:30:59.8867619-03:00;Thread#13;Info;test run finished
+2019-03-16T12:30:59.8876846-03:00;Thread#13;Info;publishing test results
+2019-03-16T12:30:59.9656744-03:00;Thread#13;Info;test results published
+2019-03-16T12:30:59.9656744-03:00;Thread#13;Info;generating reports
+2019-03-16T12:30:59.9706295-03:00;Thread#13;Info;creating 1 report(s)
+2019-03-16T12:30:59.9706295-03:00;Thread#13;Info;generate Report ReportTemplate.cshtml
+2019-03-16T12:31:01.1213087-03:00;Thread#13;Info;reports generated
+Total: 3
+Succeeded: 3
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 0
+2019-03-16T12:31:01.1252961-03:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+2019-03-16T12:31:01.1252961-03:00;VSTestExecutionThread;Info;adding Test Execution Report 'C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\TestResults\ApiTestingInteg_Specflow_ApiTestingInteg_Specflow_2019-03-16T122925.html'
+2019-03-16T12:31:01.1322784-03:00;VSTestExecutionThread;Info;Log file: file:///C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\TestResults\ApiTestingInteg_Specflow_ApiTestingInteg_Specflow_2019-03-16T122925.log

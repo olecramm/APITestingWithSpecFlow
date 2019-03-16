@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "title": "The Root Schema",
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "integer",
+      "title": "The Id Schema",
+      "required": true,
+      "default": 0,
+      "examples": [
+        3
+      ]
+    },
+    "title": {
+      "$id": "#/properties/title",
+      "type": "string",
+      "title": "The Title Schema",
+      "required": true,
+      "default": "",
+      "examples": [
+        "Software Testing Help"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "author": {
+      "$id": "#/properties/author",
+      "type": "string",
+      "title": "The Author Schema",
+      "required": true,
+      "default": "",
+      "examples": [
+        "Marcelo M"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}
