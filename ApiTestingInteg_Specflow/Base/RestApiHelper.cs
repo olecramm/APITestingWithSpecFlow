@@ -58,7 +58,7 @@ namespace ApiTestingInteg_Specflow.Base
         public static T GetResource<T>(string resourcePath)
         {
             T jsonObjectData = default(T);
-            string path = Path.Combine(rootProject, resourcePath);
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, resourcePath);
 
             using (StreamReader file = File.OpenText(path))
             {

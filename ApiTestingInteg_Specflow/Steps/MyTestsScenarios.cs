@@ -27,12 +27,8 @@ namespace ApiTestingInteg_Specflow.Steps
         {
             var response = RestApiHelper.GetResponse();
 
-            Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
-
-            //if (response.StatusCode == HttpStatusCode.OK)
-            //{
-
-            //}
+            if (response.StatusCode == HttpStatusCode.OK)
+                Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
         }
 
         [When(@"I call the method GET to fetch user information using the ID (.*)")]
@@ -77,11 +73,6 @@ namespace ApiTestingInteg_Specflow.Steps
             var response = RestApiHelper.GetResponse();
 
             Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
-
-            //if (response.IsSuccessful == true)
-            //{
-
-            //}
         }
 
         [When(@"I call a POST method to register a book")]
@@ -96,11 +87,6 @@ namespace ApiTestingInteg_Specflow.Steps
             var response = RestApiHelper.GetResponse();
 
             Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.Created));
-
-            //if (response.IsSuccessful == true)
-            //{
-
-            //}
         }
 
         [When(@"I call a GET method to retrieve a book information with its (.*)")]
@@ -120,14 +106,7 @@ namespace ApiTestingInteg_Specflow.Steps
 
             Assert.That(result, Is.True);
 
-            //if (response.IsSuccessful == true)
-            //{
-
-            //}
-
         }
-
-
 
     }
 }
