@@ -66,112 +66,181 @@ namespace ApiTestingInteg_Specflow.Feature
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("T23431 - Validate API response using given endpoint - GET", new string[] {
-                "TestIntegs"}, SourceLine=4)]
-        public virtual void T23431_ValidateAPIResponseUsingGivenEndpoint_GET()
+        public virtual void FeatureBackground()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("T23431 - Validate API response using given endpoint - GET", null, new string[] {
-                        "TestIntegs"});
-#line 5
-this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 6
- testRunner.Given("I have an endpoint /posts/1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 7
- testRunner.When("I call the Get method of API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 3
+#line 4
+testRunner.Given("I have a BaseHost http://localhost:3000", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+        }
+        
+        public virtual void T23431_ValidateAPIResponseUsingGivenEndpoint_GET(string expectedResult, string[] exampleTags)
+        {
+            string[] @__tags = new string[] {
+                    "TestIntegs"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("T23431 - Validate API response using given endpoint - GET", null, @__tags);
 #line 8
- testRunner.Then("I get API response as statuscode as 200OK", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 3
+this.FeatureBackground();
+#line 9
+ testRunner.Given("I have an endpoint /posts/1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 10
+ testRunner.When("I call the Get method of API", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 11
+ testRunner.Then(string.Format("I get API response as statuscode as {0}", expectedResult), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        public virtual void T23432_GetUserInformationUsingUserid_GET(string userid, string[] exampleTags)
+        [TechTalk.SpecRun.ScenarioAttribute("T23431 - Validate API response using given endpoint - GET, Test Data, OK", new string[] {
+                "TestIntegs"}, SourceLine=13)]
+        public virtual void T23431_ValidateAPIResponseUsingGivenEndpoint_GET_TestData_OK()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("T23432 - Get user information using userid - GET", null, exampleTags);
-#line 11
+#line 8
+this.T23431_ValidateAPIResponseUsingGivenEndpoint_GET("OK", ((string[])(null)));
+#line hidden
+        }
+        
+        public virtual void T23432_GetUserInformationUsingUserid_GET(string userid, string expectedResultPath, string[] exampleTags)
+        {
+            string[] @__tags = new string[] {
+                    "TestRegression"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("T23432 - Get user information using userid - GET", null, @__tags);
+#line 19
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 12
+#line 3
+this.FeatureBackground();
+#line 20
  testRunner.Given("I have an endpoint /posts/", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 13
+#line 21
  testRunner.When(string.Format("I call the method GET to fetch user information using the ID {0}", userid), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 14
- testRunner.Then("I will get user information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 22
+ testRunner.Then(string.Format("I will get user information as like as expected file {0}", expectedResultPath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("T23432 - Get user information using userid - GET, User Info, 2", SourceLine=17)]
-        public virtual void T23432_GetUserInformationUsingUserid_GET_UserInfo_2()
+        [TechTalk.SpecRun.ScenarioAttribute("T23432 - Get user information using userid - GET, User Info and path of the expec" +
+            "ted result, 2", new string[] {
+                "TestRegression"}, SourceLine=25)]
+        public virtual void T23432_GetUserInformationUsingUserid_GET_UserInfoAndPathOfTheExpectedResult_2()
         {
-#line 11
-this.T23432_GetUserInformationUsingUserid_GET("2", ((string[])(null)));
+#line 19
+this.T23432_GetUserInformationUsingUserid_GET("2", "@\"Json\\Response\\customer-data-response.json\"", ((string[])(null)));
 #line hidden
         }
         
-        public virtual void T23433_GetUserAccountInformationUsingUseridAndAccountnumber_GET(string userId, string accountNumber, string[] exampleTags)
+        public virtual void T23433_GetUserAccountInformationUsingUseridAndAccountnumber_GET(string userId, string accountNumber, string expectedResult, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("T23433 - Get user account information using userid and accountnumber - GET", null, exampleTags);
-#line 21
+            string[] @__tags = new string[] {
+                    "TestRegression"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("T23433 - Get user account information using userid and accountnumber - GET", null, @__tags);
+#line 30
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 22
+#line 3
+this.FeatureBackground();
+#line 31
  testRunner.Given("I have an endpoint /userinformation/", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 23
+#line 32
  testRunner.When(string.Format("I call the method GET to fetch user information using the {0} and {1}", userId, accountNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 24
- testRunner.Then("I will get the user information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 33
+ testRunner.Then(string.Format("I will get the response statuscode as {0}", expectedResult), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("T23433 - Get user account information using userid and accountnumber - GET, User " +
-            "info, 101", SourceLine=27)]
-        public virtual void T23433_GetUserAccountInformationUsingUseridAndAccountnumber_GET_UserInfo_101()
+            "info plus account info and expected result, 101", new string[] {
+                "TestRegression"}, SourceLine=36)]
+        public virtual void T23433_GetUserAccountInformationUsingUseridAndAccountnumber_GET_UserInfoPlusAccountInfoAndExpectedResult_101()
         {
-#line 21
-this.T23433_GetUserAccountInformationUsingUseridAndAccountnumber_GET("101", "4534", ((string[])(null)));
+#line 30
+this.T23433_GetUserAccountInformationUsingUseridAndAccountnumber_GET("101", "4534", "OK", ((string[])(null)));
 #line hidden
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("T23434 - Post book information", SourceLine=30)]
-        public virtual void T23434_PostBookInformation()
+        public virtual void T23434_PostBookInformation_POST(string expectedResult, string jsonRequestFilePath, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("T23434 - Post book information", null, ((string[])(null)));
-#line 31
+            string[] @__tags = new string[] {
+                    "TestIntegs",
+                    "TestRegression"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("T23434 - Post book information - POST", null, @__tags);
+#line 42
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 32
+#line 3
+this.FeatureBackground();
+#line 43
  testRunner.Given("I have an endpoint /posts/", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 33
- testRunner.When("I call a POST method to register a book", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 34
- testRunner.Then("I will register the book successfuly", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 44
+ testRunner.When(string.Format("I call a POST method with the request {0} to register a book", jsonRequestFilePath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 45
+ testRunner.Then(string.Format("I will register the book successfuly returning statuscode as {0}", expectedResult), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        public virtual void T23435_ValidateJsonSchemaResponseForBookRegistered(string bookId, string[] exampleTags)
+        [TechTalk.SpecRun.ScenarioAttribute("T23434 - Post book information - POST, Test data expected result, created", new string[] {
+                "TestIntegs",
+                "TestRegression"}, SourceLine=47)]
+        public virtual void T23434_PostBookInformation_POST_TestDataExpectedResult_Created()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("T23435 - Validate json schema response for book registered", null, exampleTags);
-#line 37
+#line 42
+this.T23434_PostBookInformation_POST("created", "@\"Json\\Request\\book-data-request.json\"", ((string[])(null)));
+#line hidden
+        }
+        
+        public virtual void T23435_ValidateJsonSchemaResponseForBookRegistered_GET(string bookId, string expectedResultPath, string[] exampleTags)
+        {
+            string[] @__tags = new string[] {
+                    "TestRegression"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("T23435 - Validate json schema response for book registered - GET", null, @__tags);
+#line 53
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 38
+#line 3
+this.FeatureBackground();
+#line 54
  testRunner.Given("I have an endpoint /posts/", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 39
+#line 55
  testRunner.When(string.Format("I call a GET method to retrieve a book information with its {0}", bookId), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 40
- testRunner.Then("I will get the book information for validation", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 56
+ testRunner.Then(string.Format("I will get the book information as json to validate jsonschema as {0}", expectedResultPath), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("T23435 - Validate json schema response for book registered, 3", SourceLine=42)]
-        public virtual void T23435_ValidateJsonSchemaResponseForBookRegistered_3()
+        [TechTalk.SpecRun.ScenarioAttribute("T23435 - Validate json schema response for book registered - GET, Book info plus " +
+            "expected result path, 3", new string[] {
+                "TestRegression"}, SourceLine=58)]
+        public virtual void T23435_ValidateJsonSchemaResponseForBookRegistered_GET_BookInfoPlusExpectedResultPath_3()
         {
-#line 37
-this.T23435_ValidateJsonSchemaResponseForBookRegistered("3", ((string[])(null)));
+#line 53
+this.T23435_ValidateJsonSchemaResponseForBookRegistered_GET("3", "@\"Json\\Schema\\book-data-schema.json\"", ((string[])(null)));
 #line hidden
         }
         

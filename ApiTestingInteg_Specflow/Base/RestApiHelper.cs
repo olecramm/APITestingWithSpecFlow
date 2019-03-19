@@ -12,44 +12,33 @@ namespace ApiTestingInteg_Specflow.Base
     {
         private static RestClient client;
         private static RestRequest restRequest;
-        private static string baseURL = "http://localhost:3000";
-        private static string rootProject = @"C:\Users\MNZZ\source\repos\APITesting_Spacflow_Framework\ApiTestingInteg_Specflow\";
 
-        public static RestClient SetURL(string endpoint)
+        public static RestClient SetURL(string url)
         {
-            var url = baseURL+endpoint;
             return client = new RestClient(url);
         }
 
-        public static RestRequest CreateRequest(Method method)
+        public static IRestRequest CreateGetRequest(string resourcePath)
         {
-            restRequest = new RestRequest(method);
+            if (resourcePath == null)
+            {
+                restRequest = new RestRequest(Method.GET);
+            }
+            else
+            {
+                restRequest = new RestRequest(resourcePath, Method.GET);
+            }
+
             restRequest.AddHeader("Accept", "application/json");
             return restRequest;
         }
 
-        public static IRestRequest CreateRequest(string userId, Method method)
-        {
-            restRequest = new RestRequest(userId,method);
-            restRequest.AddHeader("Accept", "application/json");
-            return restRequest;
-        }
-
-        public static IRestRequest CreateRequest(int userId, int accountNumber, Method method)
-        {
-            var resourcePath = $"?userId={userId}&account={accountNumber}";
-            restRequest = new RestRequest(resourcePath, method);
-            restRequest.AddHeader("Accept", "Application/json");
-            return restRequest;
-        }
-
-        public static IRestRequest CreatePostRequest()
-        {
-            var jsonFilePath = @"Json\Request\book-data-request.json";
-            var objData = GetResource<BookDataModel>(jsonFilePath);
+        public static IRestRequest CreatePostRequest(string jsonRequestFilaPath)
+        {            
+            var objRequestData = GetResource<BookDataModel>(jsonRequestFilaPath);
 
             restRequest = new RestRequest(Method.POST);
-            restRequest.AddJsonBody(objData);
+            restRequest.AddJsonBody(objRequestData);
             restRequest.AddHeader("Accept", "application/json");
 
             return restRequest;
@@ -73,16 +62,9 @@ namespace ApiTestingInteg_Specflow.Base
             return client.Execute(restRequest);
         }
 
-        public static IRestRequest CreateGetRequest(string bookId, Method method)
-        {
-            restRequest = new RestRequest(bookId, method);
-            restRequest.AddHeader("Accept", "application/json");
-            return restRequest;
-        }
-
         public static string GetResource(string resourceFilePath)
         {
-            var fullPath = Path.Combine(rootProject, resourceFilePath);
+            var fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, resourceFilePath);
             var dataString = string.Empty;
 
             using (StreamReader file = File.OpenText(fullPath))
@@ -95,7 +77,7 @@ namespace ApiTestingInteg_Specflow.Base
 
         public static bool ValidateJsonSchema(string filePath, IRestResponse response)
         {
-            var schemaString = RestApiHelper.GetResource(filePath);
+            var schemaString = GetResource(filePath);
 
             JsonSchema schema = JsonSchema.Parse(schemaString);
 
